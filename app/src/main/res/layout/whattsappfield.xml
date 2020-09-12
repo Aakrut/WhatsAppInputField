@@ -1,0 +1,71 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/emogy"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:clickable="true"
+                android:src="@drawable/ic_baseline_emoji_emotions_24"/>
+
+        <EditText
+            android:id="@+id/text_field"
+            android:layout_width="210dp"
+            android:layout_height="55dp"
+            android:hint="Type here...."
+            android:layout_marginLeft="2dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/edit_text"
+            android:layout_toEndOf="@id/emogy"
+            />
+
+            <ImageView
+                android:id="@+id/attach"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_attach_file_24"
+                android:layout_toEndOf="@id/text_field"
+                android:clickable="true"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/camera"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_photo_camera_24"
+                android:layout_toEndOf="@id/attach"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:layout_marginEnd="10dp"/>
+
+        </RelativeLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_button"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="1dp"
+            android:clickable="true" />
+
+
+    </RelativeLayout>
+
+</merge>
